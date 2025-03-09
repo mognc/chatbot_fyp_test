@@ -7,7 +7,7 @@ import dotenv
 
 dotenv.load_dotenv()
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_API_KEY = st.secrets["general"]["GROQ_API_KEY"]
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 def extract_text_from_pdf(pdf_file):

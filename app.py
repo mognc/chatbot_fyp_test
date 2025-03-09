@@ -2,10 +2,7 @@ import streamlit as st
 import requests
 import PyPDF2
 from bs4 import BeautifulSoup
-import os
-import dotenv
 
-dotenv.load_dotenv()
 
 GROQ_API_KEY = st.secrets["general"]["GROQ_API_KEY"]
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
